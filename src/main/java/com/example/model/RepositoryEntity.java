@@ -28,3 +28,10 @@ public class RepositoryEntity {
 
     private LocalDateTime lastUpdated;
 }
+public String getCategory() {
+    return category;
+}
+
+public void setCategory(String category) {
+    this.category = category;
+}
