@@ -20,6 +20,7 @@ public class RepositoryEntity {
     private String owner;
 
     private String language;
+    private String category;  
 
     private int stars;
 
