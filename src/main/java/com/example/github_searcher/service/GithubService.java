@@ -13,7 +13,11 @@ import java.util.List;
 
 @Service
 public class GithubService {
+    int stars = repo.getStargazersCount();
 
+    String category = (stars > 500) ? "🔥 Trending" : "📉 Low Popularity";
+
+    repositoryEntity.setCategory(category);
     private final RepoRepository repoRepository;
     private final RestTemplate restTemplate = new RestTemplate();
 
