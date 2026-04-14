@@ -29,8 +29,8 @@ public class GithubController {
     }
 
     // API 2: Get stored repositories
-    @GetMapping("/repositories")
-    public List<RepositoryEntity> getAllRepositories() {
-        return githubService.getAllRepos();
+    @GetMapping("/repos")
+    public List<RepositoryEntity> getRepos() {
+              return repositoryService.getAllRepos();
     }
 }
